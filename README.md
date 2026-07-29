@@ -127,6 +127,16 @@ The recorded data can be visualized in RViz2.
 ![image alt](https://github.com/KarimaHaloua/multimodal-dataset-generation-of-wind-farm-turbines/blob/main/Thermal%20data%20.png?raw=true)
 
 ---
+# Data Bag Informations
+
+| Property | Value |
+|----------|-------|
+| Storage Format | MCAP |
+| ROS Distribution | ROS 2 Jazzy |
+| Recorded Modalities | RGB, Thermal, LiDAR, TF |
+| General bag size | 6.3 GiB |
+| Recording Duration | Approximately 10 minutes |
+| Output Format | ROS 2 Bag |
 
 # Potential Applications
 
