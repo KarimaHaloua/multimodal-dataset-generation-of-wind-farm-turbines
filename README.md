@@ -164,12 +164,13 @@ The generated datasets will support future research in autonomous inspection, pe
 
 ---
 
-# Associated Simulation Platform
+# Copyright
 
-The simulation environment used to generate these datasets is documented in the companion repository:
+© 2026 Karima Haloua. All rights reserved.
 
-➡️ **Wind Farm Simulation Environment**
+This repository documents research developed as part of an ongoing PhD project.
 
----
+The documentation, figures, diagrams, and other materials contained in this repository are provided for academic and informational purposes only. They may not be copied, modified, redistributed, or used in other projects or publications without the prior written permission of the author.
+For academic collaborations or further information, please contact the author.
 
 
