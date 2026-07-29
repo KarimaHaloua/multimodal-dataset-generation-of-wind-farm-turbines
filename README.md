@@ -120,6 +120,10 @@ The recorded data can be visualized in RViz2.
 
 ![image alt](https://github.com/KarimaHaloua/multimodal-dataset-generation-of-wind-farm-turbines/blob/main/Multimodal_data.png?raw=true)
 
+![image alt](https://github.com/KarimaHaloua/multimodal-dataset-generation-of-wind-farm-turbines/blob/main/Lidar%20data.png?raw=true)
+
+![image alt](
+![image alt](
 ---
 
 # Potential Applications
