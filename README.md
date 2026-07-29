@@ -1,7 +1,8 @@
 # multimodal-dataset-generation-of-wind-farm-turbines
 This repository presents a framework for generating synchronized multimodal datasets in a simulated wind farm environment. The framework supports UAV-based inspection research by acquiring RGB images, thermal images, and LiDAR point clouds from a virtual aerial platform.
 
-![image alt](
+![image alt](https://github.com/KarimaHaloua/multimodal-dataset-generation-of-wind-farm-turbines/blob/main/data_acquisition.png?raw=true)
+
 ## Overview
 
 This repository presents a framework for generating synchronized multimodal datasets from a simulated UAV operating in a virtual wind farm environment.
