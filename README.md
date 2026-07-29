@@ -44,16 +44,22 @@ The framework has been developed to:
 
 The dataset generation framework is built upon a modern robotics software stack that combines high-fidelity simulation, autonomous flight control, and robotic middleware.
 
-| Component | Role |
-|-----------|------|
-| **Gazebo Sim** | Physics-based simulation environment |
-| **PX4 SITL** | UAV flight controller simulation |
-| **ROS 2 Jazzy** | Communication middleware and data management |
-| **RViz2** | Visualization and monitoring |
-| **Python / C++** | Framework development |
+| Component | Description |
+|------------|-------------|
+| Blender | Wind farm modeling |
+| Gazebo Sim | Physics-based simulation |
+| PX4 SITL | UAV flight controller |
+| ROS 2 Jazzy | Middleware and communication |
+| QGroundControl | UAV mission control |
+| RViz2 | Data visualization |
+| Docker | Containerized execution |
 
 The interaction between these components enables the execution of autonomous UAV missions and the acquisition of synchronized multimodal data within a realistic simulation environment.
+
+The simulation runs inside a Docker container on Ubuntu 24.04.
+
 # Sensor Configuration
+We are used the default x500 vision drone (PX4 model) and add 3d lidar sensor and thermal Camera.
 
 The framework supports three complementary sensing modalities.
 
@@ -66,6 +72,17 @@ The framework supports three complementary sensing modalities.
 These sensing modalities provide complementary information for perception and inspection tasks.
 
 ---
+## TF Generation
+
+To ensure spatial consistency, odometry data are converted into TF frames using a custom ROS 2 Python node.
+
+The resulting TF tree is recorded together with the sensor data.
+
+Recorded information includes:
+
+- TF
+- Static TF
+- UAV Odometry
 
 # Synchronization
 
@@ -80,37 +97,23 @@ The framework ensures temporal consistency between the different sensing modalit
 
 ---
 
-# 📂 Dataset Organization
+## Dataset Recording
 
-The generated dataset follows a structured organization.
+All sensor streams are synchronized and recorded into a single ROS 2 bag.
 
-```text
-Dataset/
+The recorded data include:
 
-├── RGB/
-│     ├── image_000001.png
-│     ├── image_000002.png
-│     └── ...
-│
-├── Thermal/
-│     ├── thermal_000001.png
-│     ├── thermal_000002.png
-│     └── ...
-│
-├── LiDAR/
-│     ├── cloud_000001.pcd
-│     ├── cloud_000002.pcd
-│     └── ...
-│
-└── Metadata/
-      ├── timestamps.csv
-      └── sensor_information.json
-```
+- RGB Images
+- Thermal Images
+- LiDAR Scans
+- TF
+- Static TF
 
 ---
 
-# 🖼 Sample Outputs
 
+# Sample Outputs
+The recorded data can be visualized in RViz2.
 ## RGB Images
 
 <p align="center">
