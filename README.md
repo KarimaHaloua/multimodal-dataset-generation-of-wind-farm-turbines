@@ -118,8 +118,8 @@ The recorded data include:
 # Sample Outputs
 The recorded data can be visualized in RViz2.
 
-![image alt](
-![image alt](
+![image alt](https://github.com/KarimaHaloua/multimodal-dataset-generation-of-wind-farm-turbines/blob/main/Multimodal_data.png?raw=true)
+
 ---
 
 # Potential Applications
