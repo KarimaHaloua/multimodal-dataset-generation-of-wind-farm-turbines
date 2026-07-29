@@ -124,7 +124,8 @@ The recorded data can be visualized in RViz2.
 
 ![image alt](https://github.com/KarimaHaloua/multimodal-dataset-generation-of-wind-farm-turbines/blob/main/RGB%20data.png?raw=true)
 
-![image alt](
+![image alt](https://github.com/KarimaHaloua/multimodal-dataset-generation-of-wind-farm-turbines/blob/main/Thermal%20data%20.png?raw=true)
+
 ---
 
 # Potential Applications
